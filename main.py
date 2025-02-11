@@ -117,8 +117,10 @@ while True:
                     best_plate_for_vehicle[track_id] = (plate_text, plate_score)
                     print(f'Updated vehicle {track_id}: {plate_text} (Score: {plate_score})')
 
-                    message = "🚘 Detected License Plates:\n" + plate_text
-                    threading.Thread(target=sendPlate, args=(message,)).start()
+
+                    # Uncomment both lines once telegram bot is setup
+                    # message = "🚘 Detected License Plates:\n" + plate_text
+                    # threading.Thread(target=sendPlate, args=(message,)).start()
 
                     # Also add to the set of all unique plates detected
                     license_plates.add(plate_text)
