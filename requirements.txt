@@ -1,0 +1,9 @@
+numpy
+opencv-python
+cvzone
+ultralytics
+torch
+requests
+python-dotenv
+easyocr
+python-dotenv
