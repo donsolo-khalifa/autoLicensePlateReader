@@ -1,0 +1,7 @@
+*sort.py
+*.pyc
+__pycache__/
+*best.pt
+*.env
+*licensePlatesDatabase.db
+*licensevid.mp4
