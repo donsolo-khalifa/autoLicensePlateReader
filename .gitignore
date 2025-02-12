@@ -1,4 +1,3 @@
-*sort.py
 *.pyc
 __pycache__/
 *best.pt
