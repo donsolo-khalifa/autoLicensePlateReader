@@ -34,7 +34,8 @@ cap = cv2.VideoCapture("licensevid.mp4")  # Change to cap = cv2.VideoCapture(0) 
 
 ## Usage
 ### Running the Detection
-Run the following commands:
+- Create an empty folder called `json` in the `autoLicensePlateReader`
+- Run the following commands:
 ```sh
 python sqlLiteDB.py
 python main.py
@@ -48,7 +49,7 @@ To enable live notifications:
 message = "🚘 Detected License Plates:\n" + plate_text
 threading.Thread(target=sendPlate, args=(message,)).start()
 ```
-3. Create a `.env` file and add your token and chat ID:
+3. Create a `.env` file in the `autoLicensePlateReader` directory and add your token and chat ID:
 ```
 TOKEN = add token here
 CHAT_ID = add chat id here
